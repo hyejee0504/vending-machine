@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>밴딩머신</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img class="logo-img" src="images/Logo.png" alt="밴딩머신로고이미지">
+    <div class="all-wrapper">
+        <div class="purchase section">
+            <div>
+                <ul class="can_showcase-ul">
+                    <li class="can_box" id="red_can_box">
+                        <img src="images/red.png" alt="redcan">
+                        <div id="red_black_out"><img src="images/품절.png" alt=""></div>
+                        <p class="can_txt">Original_Cola</p>
+                        <button class="red can_button" id="can_button">1000원</button>
+                    </li>
+                    <li class="can_box" id="violet_can_box">
+                        <img src="images/violet.png" alt="violetcan">
+                        <div id="violet_black_out"><img src="images/품절.png" alt=""></div>
+                        <p class="can_txt">Violet_Cola</p>
+                        <button class="violet can_button" id="can_button">1000원</button>
+                    </li>
+                    <li class="can_box" id="yellow_can_box">
+                        <img src="images/yellow.png" alt="yellowcan">
+                        <div id="yellow_black_out"><img src="images/품절.png" alt=""></div>
+                        <p class="can_txt">Yellow_Cola</p>
+                        <button class="yellow can_button" id="can_button">1000원</button>
+                    </li>
+                    <li class="can_box" id="skyblue_can_box">
+                        <img src="images/skyblue.png" alt="skybluecan">
+                        <div id="skyblue_black_out"><img src="images/품절.png" alt=""></div>
+                        <p class="can_txt">Cool_Cola</p>
+                        <button class="skyblue can_button" id="can_button">1000원</button>
+                    </li>
+                    <li class="can_box" id="green_can_box">
+                        <img src="images/green.png" alt="greencan">
+                        <div id="green_black_out"><img src="images/품절.png" alt=""></div>
+                        <p class="can_txt">Green_Cola</p>
+                        <button class="green can_button" id="can_button">1000원</button>
+                    </li>
+                    <li class="can_box" id="orange_can_box">
+                        <img src="images/orange.png" alt="orangecan">
+                        <div id="orange_black_out"><img src="images/품절.png" alt=""></div>
+                        <p class="can_txt">Orange_Cola</p>
+                        <button class="orange can_button" id="can_button">1000원</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="count_section">
+                <p class="balance" id="balance_money">0</p> <!-- 잔액  -->
+                <button class="return_button">거스름돈 반환</button> <!-- 소지금으로 다시 봔환  -->
+                <form action= "">
+                    <input class="input_money" id="deposit_input" type="number" placeholder="입금액 입력" value="">
+                </form> 
+                <button class="deposit_button">입금</button>
+                <!-- 소지금에서 입금액만큼 가져옴  -->
+                <div class="put_can">
+                    <ul id="can_wishlist">
+                    </ul>
+                </div>
+                <button class="gain_button">획득</button>
+            </div>
+        </div>
+        <div class="my_basket section">
+            <div class="my_money">
+                <span class="result_money" id="all_money">25000</span>
+            </div>
+            <div class="result_list">
+                <h2>획득한 음료</h2>
+                <section class="my_cans">
+                    <ul id="can_basketlist">
+                        
+                    </ul>
+                </section>
+                <p class="amount" id="total_money">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="vending.js"></script>
+</body>
+</html>

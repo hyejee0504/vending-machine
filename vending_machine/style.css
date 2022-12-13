@@ -1,0 +1,401 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR';
+    border: 0;
+}
+
+body{
+    background-color: #EAE8FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.all-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-img{
+    width: 386px;
+    height:164.12px;
+    margin-bottom: 68px;
+}
+
+.section{
+    width: 360px;
+    height: 545px;  
+    box-sizing: border-box;
+}
+
+.purchase{
+    padding: 27px;
+    margin-right: 28px;
+    background: #FFFFFF;
+}
+
+.can_showcase-ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+
+.can_box img{
+    width: 35.86px;
+    height: 64.86px;
+    margin-top: 11px;
+}
+
+.can_box p{
+    margin: 7px 0;
+}
+
+.can_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 94px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.593), -1px -1px 2px rgba(128, 128, 128, 0.593);
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+
+.can_box:hover{
+    transform: all 0.5s;
+    border: 3px solid #6327FE;
+    box-shadow: 0px 0px;
+}
+
+.can_button{
+    color: white;
+    width: 70px;
+    height: 22px;
+    background: #6327FE;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.can_txt{
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 13px;
+    color: #333333;
+}
+
+
+.count_section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: stretch;
+}
+
+.return_button, .deposit_button{
+    width: 94px;
+    height: 33px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.593), -1px -1px 2px #80808097;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+
+.balance{
+    width: 200px;
+    height: 33px;
+    background: #EAE8FE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    line-height: -2px;
+}
+
+.balance::before{
+    content: "잔액 : ";
+    font-weight: 500;
+    font-size: 14px;
+    margin: 6px 79px 6px 10px;
+    display: inline-block;
+}
+
+.balance::after{
+    content: "원";
+    font-weight: 700;
+    font-size: 14px;
+    margin: 6px 10px 6px 5px;
+}
+
+.input_money{
+    width: 200px;
+    height: 33px;
+    border: 1px solid #80808097;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.input_money::-webkit-outer-spin-button,
+.input_money::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.gain_button{
+    width: 94px;
+    height: 106px;
+    background: #6327FE;
+    font-weight: 700;
+    font-size: 13px;
+    color: #FFFFFF;
+    box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.593), -1px -1px 2px #80808097;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.put_can{
+    width: 200px;
+    height: 106px;
+    border: 1px solid #80808097;
+    border-radius: 5px;
+    background-color: #EAE8FE;
+    scroll-behavior: auto;
+    overflow-y: scroll;
+}
+ /* 커스텀 스크롤 바 만들기 - 단점: 계속 생기지 않고 사라짐 */
+.put_can::-webkit-scrollbar,
+.my_cans::-webkit-scrollbar{
+    width: 8px;
+    height: 100%;
+}
+
+.put_can::-webkit-scrollbar-thumb,
+.my_cans::-webkit-scrollbar-thumb{
+    background-color: white;
+    background-clip: padding-box;
+    border-radius: 50px;
+    border: 2px solid transparent;
+}
+
+.put_can::-webkit-scrollbar-track,
+.my_cans::-webkit-scrollbar-track{
+    border-radius: 50px;
+}
+
+
+.my_basket{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my_money{
+    background-color: white;
+    width: 360px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result_list{
+    background-color: white;
+    width: 360px;
+    height: 474px;
+    box-sizing: border-box;
+    padding: 26px 27px;
+}
+
+.result_money{
+    width: 306px;
+    height: 32px;
+    background: #EAE8FE;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.result_money::before{
+    content: "소지금 : ";
+    font-weight: 500;
+    font-size: 14px;
+    margin: 6px 152px 6px 10px;
+    display: inline-block;
+}
+
+.result_money::after{
+    content: "원";
+    font-weight: 700;
+    font-size: 14px;
+    margin: 6px 0px 6px 5px;
+}
+
+.my_cans{
+    width: 306px;
+    height: 364px;
+    background: #EAE8FE;
+    border: 1px solid #80808097;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+
+.result_list h2{
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.amount{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 6px 30px 0px 30px;
+    text-align: right;
+
+}
+
+.amount::before{
+    content: "총금액 : ";
+    font-weight: 500;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.amount::after{
+    content: " 원";
+    font-weight: 500;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.wishlist_section{
+    display: flex;
+    width: 170px;
+    height: 46px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0;
+}
+
+.put_can li{
+    width: 170px;
+    height: 46px;
+    border: 0;
+    margin-bottom: 6px;
+}
+
+
+.wishlist_section img{
+    width: 17.93px;
+    height: 32.93px;
+}
+
+.wishlist_section p{
+    font-weight: 500;
+    font-size: 9px;
+    color: #333333;
+    margin-left: 10px;
+    margin-right: 21px;
+}
+
+.wishlist_section span{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#can_wishlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 6px 12px;
+    list-style: none;
+}
+
+.basketlist_section{
+    width: 276px;
+    height: 46px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+.basketlist_section img{
+    width:17.93px;
+    height:32.93px;
+    margin: 6.5px 10px;
+    display: inline-block;
+}
+
+.basketlist_section p{
+    width: 73px;
+    height: 10px;
+    font-weight: 500;
+    font-size: 9px;
+    color: #333333; 
+    margin-left: 10px;
+    margin-right: 120px;
+}
+
+.basketlist_section span{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0px;
+    margin-right: 8px;
+}
+
+#can_basketlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 6px 12px;
+    list-style: none;
+}
+
+div[id*="black_out"]{
+    /* display: hidden; */
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 94px;
+    height: 130px;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div[id*="black_out"] img{
+    width: 57.51px;
+    height: 44.85px;
+}
